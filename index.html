@@ -11,16 +11,26 @@
     <h1>Weather App</h1>
     <div id="centerparent"> 
         <div id="centerblock">
-            <form>
+            <form id="addressform">
                 <label for="address">Location:</label>
-                <input type="text" name="addrinput" id="address">
+                <input type="text" name="addinput" id="address">
+                <button type="submit">Search</button>
             </form>
-            <div id="weatherData">
-                <div id="data">Temperature</div>
-                <div id="data">Max</div>
-                <div id="data">Min</div>
-                <div id="data">Humidity</div>
-                <div id="data">Conditon</div>
+            <div id="weathercard">
+                <div id="weathertitle">
+                    <div class="title">Temperature</div>
+                    <div class="title">Max</div>
+                    <div class="title">Min</div>
+                    <div class="title">Humidity</div>
+                    <div class="title">Condition</div>
+                </div>
+                <div id="weatherdata">
+                    <div class="data">10</div>
+                    <div class="data">20</div>
+                    <div class="data">30</div>
+                    <div class="data">40</div>
+                    <div class="data">50</div>
+                </div>
             </div>
         </div>
     </div>

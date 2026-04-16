@@ -2,6 +2,7 @@ html{
     margin: 0;
     padding: 0;
     background-color: skyblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1{
@@ -10,7 +11,6 @@ h1{
     font-size: 72px;
     color: rgb(102, 207, 106);
     -webkit-text-stroke: black 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #centerparent{
     display: grid;
@@ -20,8 +20,59 @@ h1{
 
 #centerblock{
     background-color: rgb(211, 211, 211);
-    width: 50%;
-    height: 45%;
+    width: 100dvh;
+    height: 20dvh;
     border: rgb(136, 136, 136) solid;
     border-radius: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#addressform{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    font-size: 24px;
+    
+    border-right: solid gray;
+}
+
+button{
+    border-radius: 8px;
+    background-color: orangered;
+    cursor: pointer;
+    color: white;
+    height: 30px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+#address{
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+#weathertitle{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    margin-right: 120px;
+    margin-bottom: 75px;
+    gap: 75px;
+}
+
+.title{
+    text-decoration: underline;
+}
+
+#weatherdata{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    margin-right: 120px;
+    margin-bottom: 75px;
+    gap: 75px;
 }
