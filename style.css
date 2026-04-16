@@ -3,3 +3,25 @@ html{
     padding: 0;
     background-color: skyblue;
 }
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 72px;
+    color: rgb(102, 207, 106);
+    -webkit-text-stroke: black 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#centerparent{
+    display: grid;
+    place-items: center;
+    height: 50vh;
+}
+
+#centerblock{
+    background-color: rgb(211, 211, 211);
+    width: 50%;
+    height: 45%;
+    border: rgb(136, 136, 136) solid;
+    border-radius: 100px;
+}

@@ -7,11 +7,18 @@ function weatherPromise() {
             return response.json()
         })
         .then(function(response){
-            console.log(response)
+            const rawData = response
+            weatherData.push(rawData.currentConditions)
         })
         .catch(function(error){
             console.log(error)
         })
 }
 
+function formData(){
+
+}
+
 weatherPromise()
+
+console.log(weatherData)
