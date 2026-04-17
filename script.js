@@ -1,7 +1,7 @@
 const weatherData = []
 
 function weatherPromise(location) {
-     fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}/?key=`)
+     fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}/?key=4CCU3Y3NC2NWGPLQ9R6Z52RLU`)
         .then(function(response){
             return response.json()
         })
@@ -40,4 +40,16 @@ function addItemToPage() {
 
     const tempEl = document.getElementById('temperature')
     if (tempEl) tempEl.textContent = current.temp
+
+    const maxEl= document.getElementById('maximum')
+    if (maxEl) maxEl.textContent = current.feelslike
+
+    const minEl= document.getElementById('minimum')
+    if (minEl) minEl.textContent = current.precip + "%"
+
+    const humidEl= document.getElementById('humid')
+    if (humidEl) humidEl.textContent = current.humidity + "%"
+
+    const condEl= document.getElementById('cond')
+    if (condEl) condEl.textContent = current.conditions
 }
