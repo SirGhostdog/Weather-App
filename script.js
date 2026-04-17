@@ -28,7 +28,7 @@ function weatherPromise(location) {
         const data = new FormData(form)
         const address = data.get('addinput')
         weatherPromise(address)
-        // console.log(weatherData)
+        console.log(weatherData)
     })
 })();
 
