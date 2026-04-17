@@ -1,7 +1,7 @@
 const weatherData = []
 
 function weatherPromise(location) {
-    fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}/?key=4CCU3Y3NC2NWGPLQ9R6Z52RLU`)
+     fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}/?key=`)
         .then(function(response){
             return response.json()
         })
